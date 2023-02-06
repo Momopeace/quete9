@@ -1,0 +1,9 @@
+ TOTO
+<div (mouseover)="changeText=true" (mouseout)="changeText=false" class ="container" *ngFor="let element of arrayUtilisateur">
+    <span [hidden]="changeText">
+    <li>{{element.name}}</li>
+    <li>{{element.naissance}}</li>
+    <li>{{element.race}}</li></span>
+    <span [hidden]="!changeText">
+    <img [src]="[element.photo]" alt=""></span>
+</div>

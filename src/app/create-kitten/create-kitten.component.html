@@ -1,0 +1,37 @@
+<div class="boite">
+
+<div class="petiteboite">    
+<fieldset>
+<label for="nom">Nom</label> 
+<input type="text" name="nom" required [(ngModel)] = "name">
+</fieldset>
+</div>
+
+<div class="petiteboite"> 
+<fieldset>
+<label for="race">Race</label>
+<input type="text" name="Race" required [(ngModel)] = "race">
+</fieldset>
+</div>
+
+<div class="petiteboite">
+<fieldset>
+<label for="date de naissance">Date de naissance</label>
+<input type="date" name="Date de naissance" required [(ngModel)] = "naissance">
+</fieldset>
+</div>
+
+<div class="petiteboite">
+<fieldset>
+<label for="photo">Photo</label>
+<input type="text" name="Photo" required [(ngModel)] = "photo">
+</fieldset>
+</div>
+
+<div class="petiteboite">
+<fieldset>
+<button (click)="createKitten()">creer le chaton</button>
+</fieldset>
+</div>
+
+</div>

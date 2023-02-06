@@ -1,0 +1,7 @@
+<div class="container" *ngFor = "let element of arrayKitten; let index=index">
+<li>{{element.name}}</li>
+<li>{{element.naissance}}</li>
+<li>{{element.race}}</li>
+<img [src]="[element.photo]" alt="">
+<button (click)="adoptCat(element,index)">Adopter</button>
+</div>
